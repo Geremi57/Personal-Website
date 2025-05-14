@@ -17,27 +17,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
 
   <body>
     <!----hero Section start---->
 
-    <div class="hero">
-      <nav>
-        <h2 class="logo">Portfo<span>lio</span></h2>
+    <div id="hero">
+      <div class="header sticky">
+        <nav>
+          <h2 class="logo">Portfo<span>lio</span></h2>
+          <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <div class="bx bx-menu fa-bars" id="menu-icon"></div>
+          <nav class="nav__links">
+            <ul>
+              <li><a class="nav__link" href="#hero">Home</a></li>
 
-        <ul>
-          <li><a href="#">Home</a></li>
+              <li><a class="nav__link" href="#about">About me</a></li>
 
-          <li><a href="#">About us</a></li>
+              <li><a class="nav__link" href="#section--2">Skills</a></li>
 
-          <li><a href="#">Services</a></li>
+              <li><a class="nav__link" href="#contact">Contact us</a></li>
+            </ul>
+          </nav>
+          <!-- overlay modal-->
+        </nav>
+        <!-- <div class="modal">
+          <ul>
+            <li><a class="nav__link" href="#hero">Home</a></li>
 
-          <li><a href="#">Skills</a></li>
+            <li><a class="nav__link" href="#about">About me</a></li>
+            <li><a class="nav__link" href="#section--2">Services</a></li>
 
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </nav>
+            <li><a class="nav__link" href="#section--2">Skills</a></li>
+
+            <li><a class="nav__link" href="#contact">Contact us</a></li>
+          </ul>
+        </div> -->
+      </div>
 
       <div class="content">
         <h4>Hello My Name is</h4>
@@ -63,13 +84,11 @@
 
     <!--About section-->
 
-    <section class="about">
+    <section id="about">
       <div class="main">
-        <img src="image/IMG_20240101_120627.jpg" />
+        <img class="myImg" src="image/IMG_20240101_120627.jpg" />
 
         <div class="about-text">
-          <h2>About Me</h2>
-
           <h5>Developer & <span>Designer</span></h5>
 
           <p>
@@ -87,7 +106,7 @@
 
     <!--Services section-->
 
-    <div class="service">
+    <!-- <div id="service">
       <div class="title">
         <h2>My Services</h2>
       </div>
@@ -144,11 +163,168 @@
           </div>
         </div>
       </div>
-    </div>
+   </div> -->
+    <!-- <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">My skills</h2>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <p><i class="fa-brands fa-html5"></i></p>
+            HTML
+          </button>
+
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <p><i class="fa-brands fa-css3-alt"></i></p>
+            CSS
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <p><i class="fa-brands fa-js"></i></p>
+            JavaScript
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div> -->
+    <!-- <h5 class="operations__header">
+            Tranfser money to anyone, instantly! No fees, no BS.
+          </h5> -->
+
+    <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div> -->
+    <!-- <h5 class="operations__header"> -->
+
+    <!-- Buy a home or make your dreams come true, with instant loans.
+          </h5> -->
+    <!-- <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section" id="section--2">
+      <h2 class="section__description">Operations</h2>
+      <!-- <div class="section__title">
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div> -->
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            HTML
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            CSS
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            JavaScript
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <!-- <div class="operations__icon operations__icon--1"> -->
+          <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
+          <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
+          <svg>
+            <i class="fa-brands fa-html5"></i>
+          </svg>
+          <!-- </div> -->
+          <!-- <h5 class="operations__header">HTML</h5> -->
+          <p>
+            The <span class="highlight"> backbone of any website</span>. It
+            structures the content, setting up elements like headings,
+            paragraphs, images, and links. Without HTML, a website wouldn’t have
+            any visible content or basic organization, making it the foundation
+            on which everything else is built.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <!-- <div class="operations__icon operations__icon--2"> -->
+          <svg>
+            <!-- <use xlink:href="img/icons.svg#icon-home"></use> -->
+            <i class="fa-brands fa-css3-alt"></i>
+          </svg>
+          <!-- </div> -->
+          <!-- <h5 class="operations__header">CSS</h5> -->
+          <p>
+            Controls the <span class="highlight">style of the website </span>,
+            including colors, fonts, layout, and spacing. While HTML adds
+            content, CSS makes it look visually appealing. It’s essential for
+            creating a professional and branded look that’s consistent ensuring
+            a smooth experience for users.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <!-- <div class="operations__icon operations__icon--3"> -->
+          <svg>
+            <!-- <use xlink:href="img/icons.svg#icon-user-x"></use> -->
+            <i class="fa-brands fa-js"></i>
+          </svg>
+          <!-- </div> -->
+          <!-- <h5 class="operations__header">JavaScript</h5> -->
+          <p>
+            JavaScript adds
+            <span class="highlight">interactivity and dynamic features</span>
+            to a website. For client sites, JavaScript is crucial for adding
+            engaging and responsive features that keep visitors interested and
+            make the website feel modern and functional.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!--Contact section-->
 
-    <div class="contact">
+    <div id="contact">
       <p>Let me get you an appropriate and user friendly website.</p>
 
       <a class="button2" href="mailto:geremiwanga57@gmail.com">Hire Me</a>
@@ -171,5 +347,6 @@
         ></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
