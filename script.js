@@ -8,9 +8,24 @@ const nav__link = document.querySelector(".nav__links");
 
 const menuIcon = document.querySelector(".fa-bars");
 
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 122500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
-  console.log(e.target);
   if (e.target.classList.contains("nav__link")) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({
@@ -19,42 +34,38 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   }
 });
 
-// menuIcon.addEventListener("click", function (e) {
-//   nav__link.classList.toggle("hidden");c
-//   console.log();
-//   // nav__link.classList.add("hidden");
-//   console.log(nav__link.style.display);
-// });
-
 const initialCoods = section1.getBoundingClientRect();
 
 // console.log(clickOnMenu);
+let screenWidth;
+window.addEventListener("resize", function () {
+  // console.log("Screen width changed to: ", currentWidth);
+});
 window.addEventListener("load", function () {
+  screenWidth = this.innerWidth;
+  // if (screenWidth > 840) {
+  //   nav__link.classList.remove("hidden");
+  // } else {
+  //   nav__link.classList.add("hidden");
+  // }
+  screenWidth > 840
+    ? nav__link.classList.remove("hidden")
+    : nav__link.classList.add("hidden");
+});
+if (menuIcon && nav__link) {
   menuIcon.addEventListener("click", function () {
-    // clickOnMenu = true;
-    let clickOnMenu = "";
-    console.log(clickOnMenu);
-    clickOnMenu = true;
-    if (initialCoods.width > 840) {
-      // nav__link.classList.add("hidden");
-      // console.log(window.scrollY > initialCoods.top);
-
-      console.log(initialCoods);
+    if (nav__link.classList.contains("hidden")) {
       nav__link.classList.remove("hidden");
-      // header.classList.add("sticky");
-    } else {
+    } else if (!nav__link.classList.contains("hidden")) {
       nav__link.classList.add("hidden");
-
-      // header.classList.remove("sticky");
     }
   });
-});
+}
 
 window.addEventListener("scroll", function () {
   // e.preventDefault();
   // console.log(this);
   if (window.scrollY > initialCoods.top) {
-    console.log(window.scrollY > initialCoods.top);
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");

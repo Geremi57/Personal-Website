@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   box-sizing: border-box;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .container {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #hero {
@@ -43,6 +43,7 @@
   background-image: url(image/geremi-logo-intertwining-black-and-blue-hues-throughout-the-text-name-geremi-in-bold-sans-serif-ty-927774892.jpeg);
   background-size: cover;
   background-position: center;
+  /* object-fit: center; */
 }
 
 .header {
@@ -57,6 +58,10 @@
   /* position: fixed; */
 }
 
+body {
+  background-color: #000;
+}
+
 .sticky {
   /* height: 100%; */
   height: 120px;
@@ -67,6 +72,7 @@
 .sticky .nav__links {
   position: absolute;
   top: 0;
+  /* z-index: 1000000; */
   right: 0;
 }
 
@@ -203,7 +209,9 @@ h4 {
 
 .highlight {
   position: relative;
+  list-style: none;
   /* width: 100%; */
+  right: 0;
   color: antiquewhite;
 }
 
@@ -631,7 +639,7 @@ body {
   font-weight: 300;
   color: #444;
   /* line-height: 1.9; */
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 }
 
 /* GENERAL ELEMENTS */
@@ -677,8 +685,9 @@ body {
 }
 
 .btn {
-  display: inline-block;
+  display: relative;
   background-color: var(--color-primary);
+  z-index: 10;
   font-size: 1.6rem;
   font-family: inherit;
   font-weight: 500;
@@ -958,10 +967,130 @@ footer {
   transition: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
+/* .swiper {
+  background-color: #39b385;
+} */
+/* .-pagination {
+  position: absolute;
+  bottom: 0;
+  bottom: 10%;
+} */
+/* section { */
+/* background-color: #000; */
+/* } */
+.swiper-pagination {
+  width: 2px;
+  pointer-events: none;
+}
+.project {
+  align-items: center;
+  display: flex;
+  /* flex-direction: column; */
+  background: #1e1e1e;
+  color: #fff;
+  padding: 2rem;
+  font-size: 16px;
+  max-width: 80%;
+  position: relative;
+  padding-top: 120px;
+  /* max-height: fit-content; */
+  /* margin: 2rem; */
+  left: 10%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* background-color: #39b385; */
+}
+
+.project h2 {
+  margin-bottom: 1rem;
+  color: #ffcc70;
+  align-self: center;
+}
+.oopImg {
+  width: 92px;
+  border-radius: 52px;
+}
+
+.asyncImg {
+  width: 92px;
+  border-radius: 12px;
+}
+
+.scopeImg {
+  width: 120px;
+  border-radius: 12px;
+}
+.project .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  background: aqua;
+  color: #101010;
+  font-weight: 1000;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project .btn:hover {
+  background: #4f48d9;
+}
+
+.btn-secondary {
+  background: #555;
+}
+
+.btn-secondary:hover {
+  background: #333;
+}
+/* .project-img {
+  object-fit: center;
+  max-width: 100%;
+} */
+.map-img {
+  object-fit: center;
+  max-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+.highlights {
+  display: inline;
+  position: relative;
+  list-style: none;
+  /* top: 12px; */
+  right: 0;
+  line-height: 30px;
+  /* bottom: -10px; */
+}
+.projectContent {
+  display: flex;
+  gap: 12px;
+}
+.swiper-slide p {
+  position: relative;
+  /* right: -130px; */
+  top: 0;
+  display: flex;
+}
+@media (min-width: 850px) {
+  .project p {
+    display: none;
+  }
+}
 @media (max-width: 850px) {
   .container {
     width: 100%;
     padding: 5px;
+  }
+  .project-img {
+    object-fit: center;
+    max-width: 100%;
+  }
+  .highlights {
+    display: none;
   }
 
   .header .fa-bars {

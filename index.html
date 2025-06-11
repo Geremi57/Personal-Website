@@ -12,6 +12,10 @@
 
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
@@ -40,6 +44,8 @@
               <li><a class="nav__link" href="#about">About me</a></li>
 
               <li><a class="nav__link" href="#section--2">Skills</a></li>
+
+              <li><a class="nav__link" href=".project">Projects</a></li>
 
               <li><a class="nav__link" href="#contact">Contact us</a></li>
             </ul>
@@ -258,13 +264,13 @@
             class="btn operations__tab operations__tab--1 operations__tab--active"
             data-tab="1"
           >
-            HTML
+           Scope
           </button>
           <button class="btn operations__tab operations__tab--2" data-tab="2">
-            CSS
+            Async.Js
           </button>
           <button class="btn operations__tab operations__tab--3" data-tab="3">
-            JavaScript
+           Prototypes
           </button>
         </div>
         <div
@@ -274,55 +280,139 @@
           <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
           <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
           <svg>
-            <i class="fa-brands fa-html5"></i>
+            <img class="scopeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6n3hdcxj_StvBs882R9JHLw0jKUUoM38Wag&s"/>
           </svg>
-          <!-- </div> -->
+        <!-- </div> -->
           <!-- <h5 class="operations__header">HTML</h5> -->
           <p>
-            The <span class="highlight"> backbone of any website</span>. It
-            structures the content, setting up elements like headings,
-            paragraphs, images, and links. Without HTML, a website wouldn’t have
-            any visible content or basic organization, making it the foundation
-            on which everything else is built.
+            The <span class="highlight"> At the core of JavaScript is the concept of execution context</span>, which is the environment in which code is evaluated and executed. When JavaScript runs a script, it creates a global execution context and, for each function call, a new function execution context. These contexts are managed in a stack-like structure called the call stack. Within each context, variables are stored in what's called the scope. JavaScript uses lexical scoping, meaning a function’s scope is determined by where it was defined in the code. Understanding how context and scope work is essential for managing variable access and avoiding bugs, especially in nested functions and closures
           </p>
         </div>
-
+        
         <div class="operations__content operations__content--2">
           <!-- <div class="operations__icon operations__icon--2"> -->
-          <svg>
-            <!-- <use xlink:href="img/icons.svg#icon-home"></use> -->
-            <i class="fa-brands fa-css3-alt"></i>
+            <svg>
+              <!-- <use xlink:href="img/icons.svg#icon-home"></use> -->
+              <img class="asyncImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn7ZHnSquEfG_LPtB5IY0DBzIjzItm8qFrFw&s"/>
+            <!-- <i class="fa-brands fa-css3-alt"></i> -->
           </svg>
           <!-- </div> -->
           <!-- <h5 class="operations__header">CSS</h5> -->
           <p>
-            Controls the <span class="highlight">style of the website </span>,
-            including colors, fonts, layout, and spacing. While HTML adds
-            content, CSS makes it look visually appealing. It’s essential for
-            creating a professional and branded look that’s consistent ensuring
-            a smooth experience for users.
+            Controls the <span class="highlight">
+            JavaScript is single-threaded</span>, which means it handles one task at a time. To prevent blocking the main thread, it uses asynchronous features like callbacks, promises, and async/await. These tools allow JavaScript to manage operations like fetching data or reading files without freezing the browser. The event loop plays a crucial role by continuously checking if the call stack is empty and then pushing deferred functions (like .then() or setTimeout) from the queue to the stack. Mastering async concepts is crucial for writing responsive, non-blocking code in modern web applications.
           </p>
         </div>
         <div class="operations__content operations__content--3">
           <!-- <div class="operations__icon operations__icon--3"> -->
           <svg>
             <!-- <use xlink:href="img/icons.svg#icon-user-x"></use> -->
-            <i class="fa-brands fa-js"></i>
+            <img src="https://thumbs.dreamstime.com/b/oop-object-oriented-programming-acronym-technology-concept-background-235347750.jpg" class="oopImg" alt="oop">
           </svg>
           <!-- </div> -->
           <!-- <h5 class="operations__header">JavaScript</h5> -->
           <p>
             JavaScript adds
-            <span class="highlight">interactivity and dynamic features</span>
-            to a website. For client sites, JavaScript is crucial for adding
-            engaging and responsive features that keep visitors interested and
-            make the website feel modern and functional.
+            <span class="highlight">
+          JavaScript is a prototype-based language</span>b, which means inheritance is achieved via prototypes rather than classical classes (though ES6 classes abstract this behavior). Every object has an internal link to another object called its prototype, and it inherits properties and methods from that prototype. The this keyword refers to the object that is currently executing the function and behaves differently depending on how the function is called (regular function, method, arrow function, etc.). Understanding objects, the prototype chain, and the behavior of this is essential for writing efficient and scalable code in JavaScript.
           </p>
         </div>
       </div>
     </section>
 
     <!--Contact section-->
+    <section class="project">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <h2>🍲 Oliro Recipe Finder</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/Annotation 2025-06-06 165820.png" width="450px" height="450px">
+              <ul class="highlights">
+                <li>Built with JavaScript (ES6), Object-Oriented Programming</li>
+                <li>Implements MVC Architecture</li>
+                <li>Integrates with Forkify API</li>
+                <li>Responsive & mobile-friendly</li>
+                <li>Uses async/await, fetch(), and modular code</li>
+                <li>🔧 Advanced DOM manipulation and dynamic rendering using template literals</li>
+                <li>💾 Bookmark system: Allows users to save and revisit favorite recipes</li>
+                <li>🔢 Dynamic URL routing with hashchange and load events for better SPA-like navigation</li>
+                <li>🖼️ Responsive design — optimized for both mobile and desktop viewing</li>
+                <li>🧪 Debugging & Testing: Used Chrome DevTools to fix bugs, inspect API calls, and improve performance</li>
+                <li>🌐 Deployed on Netlify with version control through Git & GitHub</li>
+                <li>📝 allows users to dynamically add their own recipes with ingredients into the api using api key</li>
+              </ul>
+            </div>
+              <p>
+                A clean, MVC-structured recipe app that fetches millions of recipes
+                from an API. Users can search, view, and explore recipe details with
+                a focus on speed and usability. Built using JavaScript (ES6),
+                modular architecture, async/await, and object-oriented principles.
+              </p>
+              <a
+              href="https://olirorecipes.netlify.app/"
+              target="_blank"
+              class="btn"
+              >View Live</a>
+              <a
+              href="https://github.com/Geremi57/oliro-recipes"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Code</a
+              >
+          </div>
+          
+          <!-- <div class="swiper-slide">
+            <h2>MapOut workouts</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/Annotation 2025-06-11 124346.png">
+              <ul class="highlights">
+                <li>📍 Map Integration: Log workouts by clicking directly on the map (powered by Leaflet)</li>
+                <li>🏃 Running & Cycling: Track distance, duration, cadence, and elevation gain.</li>
+                <li>🗂 Workout List: View all your workouts in a sidebar list.</li>
+                <li>🗑 Delete Workouts: Remove workouts easily with a single click.</li>
+                <li>💾 Local Storage: Your data is saved in your browser and persists across sessions.</li>
+                <li>ℹ️ Info Modal: Learn how to use the app with a built-in help modal.</li>
+              </ul>
+            </div> -->
+            <div class="swiper-slide">
+            <h2>📌MapOut Workouts</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/Annotation 2025-06-11 124346.png " width="450px" height="450px">
+              <ul class="highlights">
+                <li>📍 Map Integration: Log workouts by clicking directly on the map (powered by Leaflet)</li>
+                <li>🏃 Running & Cycling: Track distance, duration, cadence, and elevation gain.</li>
+                <li>🗂 Workout List: View all your workouts in a sidebar list.</li>
+                <li>🗑 Delete Workouts: Remove workouts easily with a single click.</li>
+                <li>💾 Local Storage: Your data is saved in your browser and persists across sessions.</li>
+                <li>ℹ️ Info Modal: Learn how to use the app with a built-in help modal.</li>
+              </ul>
+            </div>
+                <p>
+                  Mapouts is a simple and interactive workout tracking application that lets you log your running and cycling workouts directly on a map. Visualize your progress, keep track of your stats, and see your workout locations at a glance
+                </p>
+          <a
+            href="https://geremi57.github.io/mapout/"
+            target="_blank"
+            class="btn"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Geremi57/mapout"
+            target="_blank"
+            class="btn btn-secondary"
+            >View Code</a>
+          </div>
+       
+        </div>
+        
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div>
+      
+    </section>
 
     <div id="contact">
       <p>Let me get you an appropriate and user friendly website.</p>
@@ -338,7 +428,7 @@
           ><i class="fa-brands fa-facebook"></i
         ></a>
 
-        <a href="https://www.instagram.com/iam_thekingz/"
+        <a href="https://www.instagram.com/the_kingz_nahhh/"
           ><i class="fa-brands fa-instagram"></i
         ></a>
 
@@ -347,6 +437,7 @@
         ></a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
