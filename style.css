@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 :root {
   --color-primary: #5ec576;
   --color-secondary: #ffcb03;
@@ -21,22 +21,7 @@
   box-sizing: border-box;
 }
 
-@media (width: 500px) {
-  /* .container {
-    width: 100%;
-    padding: 5px;
-  } */
-  /* .header .fa-bars {
-    display: initial;
-  } */
-  /* .header .fa-bars {
-    display: initial;
-  } */
-}
-
-.container {
-  /* overflow-x: hidden; */
-}
+/* overflow-x: hidden; */
 
 #hero {
   height: 100vh;
@@ -1176,8 +1161,7 @@ footer {
       width: 100%;
     } */
 }
-=======
-:root {
+======= :root {
   --color-primary: #5ec576;
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
@@ -2225,4 +2209,4 @@ footer {
       width: 100%;
     } */
 }
->>>>>>> a70520ae45312f10bf87bcdf422e598364bda28c
+/* >>>>>>> a70520ae45312f10bf87bcdf422e598364bda28c */
