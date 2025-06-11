@@ -38,12 +38,18 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
 
 const initialCoods = section1.getBoundingClientRect();
 
+// console.log(clickOnMenu);
 let screenWidth;
 window.addEventListener("resize", function () {
-  // Optionally handle resize logic here
+  // console.log("Screen width changed to: ", currentWidth);
 });
 window.addEventListener("load", function () {
   screenWidth = this.innerWidth;
+  // if (screenWidth > 840) {
+  //   nav__link.classList.remove("hidden");
+  // } else {
+  //   nav__link.classList.add("hidden");
+  // }
   screenWidth > 840
     ? nav__link.classList.remove("hidden")
     : nav__link.classList.add("hidden");
@@ -59,6 +65,8 @@ if (menuIcon && nav__link) {
 }
 
 window.addEventListener("scroll", function () {
+  // e.preventDefault();
+  // console.log(this);
   if (window.scrollY > initialCoods.top) {
     header.classList.add("sticky");
   } else {
@@ -69,6 +77,7 @@ const operationButton = document.querySelectorAll(".operations__tab ");
 
 // const callback = function (entries) {
 //   const [entry] = entries;
+//   console.log(entry);
 //   if (!entry.isIntersecting) return;
 // };
 
@@ -84,6 +93,7 @@ const operationButton = document.querySelectorAll(".operations__tab ");
 
 tabContainer.addEventListener("click", function (e) {
   e.preventDefault();
+  console.log("noooooo");
 
   const clicked = e.target.closest(".operations__tab");
 
@@ -91,11 +101,22 @@ tabContainer.addEventListener("click", function (e) {
 
   operationButton.forEach((tab) => {
     tab.classList.remove("operations__tab--active");
+    console.log(tab.classList);
   });
 
   tabContent.forEach(function (el) {
     el.classList.remove("operations__content--active");
+
+    // console.log(el);
+
+    // console.log(clicked);
+    // clicked;
+    // tab.addEventListener("click", () =>
+    //   tab.classList.add("operations__content--active")
+    // );
   });
+
+  console.log(clicked.classList);
 
   clicked.classList.add("operations__tab--active");
 
