@@ -258,8 +258,8 @@ h4 {
 .about-text p {
   color: #fcfc;
   letter-spacing: 1px;
-  line-height: 28px;
-  font-size: 18px;
+  line-height: 48px;
+  font-size: 28px;
   margin-bottom: 45px;
 }
 
@@ -1091,6 +1091,7 @@ footer {
   }
   .about-text p {
     /* position: absolute; */
+    line-height: 30px;
     right: 150px;
     top: -10px;
     padding: -0%;
