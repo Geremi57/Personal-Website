@@ -285,7 +285,11 @@ h4 {
   border: 2px solid #f9004d;
   cursor: pointer;
 }
-
+/* reveal section */
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
 /* service and skill section */
 
 /* #service {
@@ -320,6 +324,72 @@ h4 {
   overflow: hidden;
   text-align: center;
 }
+  /* From Uiverse.io by andrew-demchenk0 */
+.button {
+  position: relative;
+  width: 150px;
+  top: 32px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #17795e;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  font-style: italic;
+  font-weight: bolder;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button:hover {
+  background: #17795e;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #146c54;
+}
+
+.button:active {
+  border: 1px solid #146c54;
+}
 
 .card i {
   font-size: 30px;
@@ -346,7 +416,8 @@ h5 {
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
-} */
+}
+
 /* .section {
   padding: 1rem 3rem;
   border-top: 1px solid #ddd;
@@ -631,7 +702,9 @@ body {
   /* line-height: 1.9; */
   /* background-color: #f3f3f3; */
 }
-
+a {
+  text-decoration: none;
+}
 /* GENERAL ELEMENTS */
 .section {
   font-size: 62.5%;
@@ -893,7 +966,7 @@ i {
   font-size: 17px;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 13px 22px;
+  padding: 9px 12px;
   border-radius: 30px;
   animation: animate 1s ease-in-out infinite alternate;
   transition: 0.4s;
@@ -1165,5 +1238,10 @@ footer {
 
   .content .newsletter {
     width: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .operations__tab {
+    padding: 0;
   }
 }
