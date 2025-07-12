@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Personal portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <body>
+    <!----hero Section start---->
+
+    <div id="hero">
+      <div class="header sticky">
+        <nav>
+          <h2 class="logo">Portfo<span>lio</span></h2>
+          <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <div class="bx bx-menu fa-bars" id="menu-icon"></div>
+          <nav class="nav__links">
+            <ul>
+              <li><a class="nav__link" href="#hero">Home</a></li>
+
+              <li><a class="nav__link" href="#about">About me</a></li>
+
+              <li><a class="nav__link" href="#section--2"> Blog</a></li>
+
+              <li><a class="nav__link" href=".project">Projects</a></li>
+
+              <li><a class="nav__link" href="#contact">Contact</a></li>
+             
+            </ul>
+          </nav>
+          <!-- overlay modal-->
+        </nav>
+        
+      </div>
+
+      <div class="content">
+        <h4>Hello My Name is</h4>
+
+        <h1>Geremi <span>Wanga</span></h1>
+
+        <h3>Iam a Front-end developer.</h3>
+
+        <div class="newsletter">
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Enter your Email"
+            />
+
+            <a href="mailto:geremiwanga57@gmail.com">Let's Start</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--About section-->
+
+    <section id="about" class="section " >
+      <div class="main">
+        <img class="myImg" src="image/IMG_20240101_120627.jpg" />
+
+        <div class="about-text">
+          <h5>Developer & <span>Designer</span></h5>
+
+          <p>
+            Hi, I’m Geremi a passionate front end developer
+            focused on building intuitive, engaging web experiences.
+            With skills in HTML, CSS, JavaScript, and React,
+            I turn ideas into clean, responsive interfaces.
+            I'm exploring how AI and the web can work together to create meaningful, 
+            dynamic tools.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section " id="section--2">
+      <!-- <h2 class="section__description">Operations</h2> -->
+      <!-- <div class="section__title">
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div> -->
+
+      <div class="operations ">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+           Scope
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            Async.Js
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+           Prototypes
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <!-- <div class="operations__icon operations__icon--1"> -->
+          <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
+          <!-- <use xlink:href="img/icons.svg#icon-upload"></use> -->
+          <svg>
+            <img class="scopeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6n3hdcxj_StvBs882R9JHLw0jKUUoM38Wag&s"/>
+          </svg>
+        <!-- </div> -->
+          <!-- <h5 class="operations__header">HTML</h5> -->
+          <p>
+            The <span class="highlight"> At the core of JavaScript is the concept of execution context</span>, which is the environment in which code is evaluated and executed. When JavaScript runs a script, it creates a global execution context and, for each function call, a new function execution context. These contexts are managed in a stack like structure called the call stack. Within each context, variables are stored in what's called the scope. JavaScript uses lexical scoping, meaning a function’s scope is determined by where it was defined in the code. Understanding how context and scope work is essential for managing variable access and avoiding bugs, especially in nested functions and closures
+          </p>
+        </div>
+        
+        <div class="operations__content operations__content--2">
+          <!-- <div class="operations__icon operations__icon--2"> -->
+            <svg>
+              <!-- <use xlink:href="img/icons.svg#icon-home"></use> -->
+              <img class="asyncImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn7ZHnSquEfG_LPtB5IY0DBzIjzItm8qFrFw&s"/>
+            <!-- <i class="fa-brands fa-css3-alt"></i> -->
+          </svg>
+          <!-- </div> -->
+          <!-- <h5 class="operations__header">CSS</h5> -->
+          <p>
+            Controls the <span class="highlight">
+            JavaScript is single threaded</span>, which means it handles one task at a time. To prevent blocking the main thread, it uses asynchronous features like callbacks, promises, and async await. These tools allow JavaScript to manage operations like fetching data or reading files without freezing the browser. The event loop plays a crucial role by continuously checking if the call stack is empty and then pushing deferred functions (like .then() or setTimeout) from the queue to the stack. Mastering async concepts is crucial for writing responsive, non blocking code in modern web applications.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <!-- <div class="operations__icon operations__icon--3"> -->
+          <svg>
+            <!-- <use xlink:href="img/icons.svg#icon-user-x"></use> -->
+            <img src="https://thumbs.dreamstime.com/b/oop-object-oriented-programming-acronym-technology-concept-background-235347750.jpg" class="oopImg" alt="oop">
+          </svg>
+          <!-- </div> -->
+          <!-- <h5 class="operations__header">JavaScript</h5> -->
+          <p>
+            JavaScript adds
+            <span class="highlight">
+          JavaScript is a prototype based language</span>, which means inheritance is achieved via prototypes rather than classical classes (though ES6 classes abstract this behavior). Every object has an internal link to another object called its prototype, and it inherits properties and methods from that prototype. The this keyword refers to the object that is currently executing the function and behaves differently depending on how the function is called (regular function, method, arrow function, etc.). Understanding objects, the prototype chain, and the behavior of this is essential for writing efficient and scalable code in JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="project section ">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+<div class="swiper-slide">
+            <h2>🤖AI Tool Repository</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/AI-repo.png" width="450px" height="450px">
+              <ul class="highlights">
+  <li>📚 Curated and categorized repository of AI tools</li>
+  <li>🧠 Built with Notion organized for clarity, speed, and insight</li>
+  <li>🎯 Covers multiple domains: Coding, Design, Audio, Learning, and Productivity</li>
+  <li>📂 Tag based filtering: Categories like #AIProductivity, #Entertainment, #Business</li>
+  <li>💬 Each tool features a short summary, usage example, and my personal rating</li>
+  <li>🔗 Direct links to tools, tutorials (YouTube/GitHub), and official documentation</li>
+  <li>⚙️ Tools include GitHub Copilot, Cursor, Udio, Canva, Teachable Machine, and more</li>
+  <li>💼 Use case focused: Ideal for developers, designers, and content creators</li>
+  <li>🚀 Demonstrates initiative in AI assisted development & modern workflows</li>
+  <li>🔄 Continuously updated as I discover and test new tools</li>
+</ul>
+
+</div>
+<p>
+                A curated and regularly updated Notion repo of AI tools I use for development, design, productivity, content creation, and learning. Each tool includes my rating, category, link, and a quick summary.
+              </p>
+              <a
+              href="https://www.notion.so/14739611426f809497f2fe7193339e3c?v=14739611426f8056a42a000ca8a74e66&pvs=4"
+              target="_blank"
+              class="btn"
+              >View Repo</a>
+          </div>
+          
+          <div class="swiper-slide">
+             <h2>✨📊Task Realm</h2>
+             <div class="projectContent">
+               <img class="project-img" src="./image/Annotation 2025-07-12 234431.png" width="450px" height="450px">
+               <ul class="highlights">
+            
+  <li>🌌 Features a <strong>futuristic galaxy style UI</strong> with an animated video background and a custom neon logo</li>
+  <li>⏳ Includes <strong>live countdown timers</strong> showing time remaining for each task</li>
+  <li>🔔 Implements <strong>desktop notifications</strong> when a task’s deadline is reached (with permission)</li>
+  <li>🗂️ Task details appear in a <strong>modal popup</strong> showing title, notes, and live deadline countdown</li>
+  <li>💾 Uses <strong>localStorage</strong> to persist tasks across sessions</li>
+  <li>✅ Mark tasks complete with interactive checkboxes and slide out animations</li>
+  <li>🧭 Fully <strong>responsive design</strong> for mobile and desktop users</li>
+  <li>📝 Input fields include <strong>task title</strong>, <strong>note</strong>, and a <strong>datetime local</strong> picker</li>
+  <li>🎨 Designed with <strong>clean fonts</strong>, modern transitions, and smooth animations</li>
+  <li>🧩 Built using <strong>modular ES6 classes</strong> (<code>Task</code>, <code>Modal</code>) for scalability</li>
+  <li>🚀 Ideal for <strong>self managers, developers, students</strong>, and productivity enthusiasts</li>
+  <li>🔄 Continuously updated with new features and visual improvements</li>
+</ul>
+             </div>
+                <p>
+  A futuristic task manager. 
+  Features animated galaxy themed background, custom logo, and live deadline countdowns.  
+  Includes localStorage, desktop notifications, and responsive modals for task details.  
+  Designed for productivity lovers who want both function and flair.
+</p>
+
+           <a
+             href="https://geremi57.github.io/to_do_app"
+             target="_blank"
+             class="btn"
+             >View Live</a
+           >
+           <a
+             href="https://github.com/Geremi57/to_do_app"
+             target="_blank"
+             class="btn btn-secondary"
+             >View Code</a>
+           </div>
+          <div class="swiper-slide">
+            <h2>🍲 Oliro Recipe Finder</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/Annotation 2025-06-06 165820.png" width="450px" height="450px">
+              <ul class="highlights">
+                <p class="info">
+                  <li>Built with JavaScript (ES6), Object-Oriented Programming</li>
+                  <li>Implements MVC Architecture</li>
+                  <li>Integrates with Forkify API</li>
+                  <li>Responsive & mobile-friendly</li>
+                  <li>Uses async/await, fetch(), and modular code</li>
+                  <li>🔧 Advanced DOM manipulation and dynamic rendering using template literals</li>
+                </p>
+                  <li>💾 Bookmark system: Allows users to save and revisit favorite recipes</li>
+                  <li>🔢 Dynamic URL routing with hashchange and load events for better SPA-like navigation</li>
+                  <li>🖼️ Responsive design optimized for both mobile and desktop viewing</li>
+                  <li>🧪 Debugging & Testing: Used Chrome DevTools to fix bugs, inspect API calls, and improve performance</li>
+                  <li>🌐 Deployed on Netlify with version control through Git & GitHub</li>
+                  <li>📝 allows users to dynamically add their own recipes with ingredients into the api using api key</li>
+              </ul>
+            </div>
+              <p>
+                A clean, MVC-structured recipe app that fetches millions of recipes
+                from an API. Users can search, view, and explore recipe details with
+                a focus on speed and usability. Built using JavaScript (ES6),
+                modular architecture, async await, and object-oriented principles.
+              </p>
+              <a
+              href="https://olirorecipes.netlify.app/"
+              target="_blank"
+              class="btn"
+              >View Live</a>
+              <a
+              href="https://github.com/Geremi57/oliro-recipes"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Code</a
+              >
+          </div>
+          
+          <!-- <div class="swiper-slide">
+            <h2>MapOut workouts</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/Annotation 2025-06-11 124346.png">
+              <ul class="highlights">
+                <li>📍 Map Integration: Log workouts by clicking directly on the map (powered by Leaflet)</li>
+                <li>🏃 Running & Cycling: Track distance, duration, cadence, and elevation gain.</li>
+                <li>🗂 Workout List: View all your workouts in a sidebar list.</li>
+                <li>🗑 Delete Workouts: Remove workouts easily with a single click.</li>
+                <li>💾 Local Storage: Your data is saved in your browser and persists across sessions.</li>
+                <li>ℹ️ Info Modal: Learn how to use the app with a built-in help modal.</li>
+              </ul>
+            </div> -->
+            <div class="swiper-slide">
+            <h2>📌MapOut Workouts</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/Annotation 2025-06-11 124346.png " width="450px" height="450px">
+              <ul class="highlights">
+                <p class="info">
+                <li>Open the app in your browser</li>
+<li>Allow location access so the map can center on your area.</li>
+<li>Click anywhere on the map to add a new workout.</li>
+<li>Fill in the workout details in the form and submit.</li>
+<li>View your workouts in the sidebar and as markers on the map.</li>
+<li>Click a workout in the list to center the map on its location.</li>
+<li>Delete a workout by clicking the trash icon next to it.</li>
+<li>Click the ℹ️ Info button for help and usage instructions.</li>
+</p>
+                <li>📍 Map Integration: Log workouts by clicking directly on the map (powered by Leaflet)</li>
+                <li>🏃 Running & Cycling: Track distance, duration, cadence, and elevation gain.</li>
+                <li>🗂 Workout List: View all your workouts in a sidebar list.</li>
+                <li>🗑 Delete Workouts: Remove workouts easily with a single click.</li>
+                <li>💾 Local Storage: Your data is saved in your browser and persists across sessions.</li>
+                <li>ℹ️ Info Modal: Learn how to use the app with a built in help modal.</li>
+              </ul>
+            </div>
+                <p>
+                  Mapouts is a simple and interactive workout tracking application that lets you log your running and cycling workouts directly on a map. Visualize your progress, keep track of your stats, and see your workout locations at a glance
+                </p>
+          <a
+            href="https://geremi57.github.io/mapout/"
+            target="_blank"
+            class="btn"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Geremi57/mapout"
+            target="_blank"
+            class="btn btn-secondary"
+            >View Code</a>
+          </div>
+           <div class="swiper-slide">
+            <h2>🎲Roll & Hold</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/roll_hold.png" width="450px" height="450px">
+              <ul class="highlights">
+                <p class="info">
+                <li>Open the app in your browser</li>
+                <li>Players take turns to roll a dice as many times as they wish.</li>
+                <li>Each roll adds its value to the player's current score.</li>
+
+<li>If a player rolls a 1, their current score is lost, and it becomes the next player's turn.</li>
+<li>At any time, a player can Hold to add their current score to their total score.</li> 
+<li>Then, it becomes the next player's turn.</li>
+<li>The first player to reach 100 points on their total score wins the game.</li>
+              </ul>
+            </div>
+                <p>
+                  This is a browser based implementation of the classic Pig Dice Game. The game is built using HTML, CSS, and Vanilla JavaScript
+                </p>
+          <a
+            href="https://geremi57.github.io/Roll-hold/"
+            target="_blank"
+            class="btn"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Geremi57/Roll-hold"
+            target="_blank"
+            class="btn btn-secondary"
+            >View Code</a>
+          </div>
+
+
+           <div class="swiper-slide">
+            <h2>🤔💭Guess the Number</h2>
+            <div class="projectContent">
+              <img class="project-img" src="./image/guess my number.png" width="450px" height="450px">
+              <ul class="highlights">
+                <p class="info">
+                <li>Open the app in your browser</li>
+<li>The game randomly selects a secret number between 1 and 20.</li>
+<li>Enter your guess in the input field and click Check!.</li>
+<li>The game will tell you if your guess is too high, too low, or correct.</li>
+<li>Each wrong guess decreases your score by 1.</li>
+<li>If you guess the number, your score is compared to the highscore.</li>
+<li>Click Again! to restart the game with a new secret number.
+Project Structure</li>
+</ul>
+            </div>
+                <p>
+                  A simple interactive number guessing game built with HTML, CSS, and JavaScript.
+                  Responsive and retro inspired design.
+Real time feedback for user guesses.
+Highscore tracking for your best game.
+
+                </p>
+          <a
+            href="https://geremi57.github.io/guess-the-number-game/"
+            target="_blank"
+            class="btn"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Geremi57/guess-the-number-game"
+            target="_blank"
+            class="btn btn-secondary"
+            >View Code</a>
+          </div>
+       
+       
+        </div>
+       
+        </div>
+        
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div>
+      
+    </section>
+
+    <div id="contact" class=" section ">
+      <p>"Persistence Over Privilege Always".</p>
+
+      <a class="button2" href="mailto:geremiwanga57@gmail.com">Hire Me</a>
+       
+      <a download 
+      href="./Resume.pdf" >
+      <button class="button" type="button">
+      <span class="button__text">Resume</span>
+      <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+</button>
+    </a>
+
+  
+      
+    </div>
+  
+
+    <!--Footer section-->
+
+    <footer class="section ">
+      <div class="social">
+        <a href="https://www.facebook.com/grizzy.kings"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+
+        
+
+        <a href="https://github.com/Geremi57"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/geremi-wanga-g2018wtk/"
+          ><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
