@@ -41,8 +41,17 @@ const initialCoods = section1.getBoundingClientRect();
 // console.log(clickOnMenu);
 let screenWidth;
 window.addEventListener("resize", function () {
-  // console.log("Screen width changed to: ", currentWidth);
+  screenWidth = this.innerWidth;
+
+  if (screenWidth > 840 && nav__link.classList.contains("hidden")) {
+    nav__link.classList.remove("hidden");
+  }
+
+  if (screenWidth <= 840 && !nav__link.classList.contains("hidden")) {
+    nav__link.classList.add("hidden");
+  }
 });
+
 window.addEventListener("load", function () {
   screenWidth = this.innerWidth;
   // if (screenWidth > 840) {
@@ -54,15 +63,13 @@ window.addEventListener("load", function () {
     ? nav__link.classList.remove("hidden")
     : nav__link.classList.add("hidden");
 });
-if (menuIcon && nav__link) {
-  menuIcon.addEventListener("click", function () {
-    if (nav__link.classList.contains("hidden")) {
-      nav__link.classList.remove("hidden");
-    } else if (!nav__link.classList.contains("hidden")) {
-      nav__link.classList.add("hidden");
-    }
-  });
-}
+menuIcon.addEventListener("click", function () {
+  if (menuIcon && nav__link) {
+    console.log("clicked");
+    console.log(nav__link.classList);
+    nav__link.classList.toggle("hidden");
+  }
+});
 
 window.addEventListener("scroll", function () {
   // e.preventDefault();
