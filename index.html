@@ -32,49 +32,51 @@
     <!----hero Section start---->
 
     <div id="hero">
-      <div class="header sticky">
-        <nav>
-          <h2 class="logo">Portfo<span>lio</span></h2>
-          <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
-          <!-- <i class="fa-solid fa-bars"></i> -->
-          <div class="bx bx-menu fa-bars" id="menu-icon"></div>
-          <nav class="nav__links">
-            <ul>
-              <li><a class="nav__link" href="#hero">Home</a></li>
+      <!-- <div class="header sticky"> -->
+        <!-- <nav class="navbar"> -->
+     
 
-              <li><a class="nav__link" href="#about">About me</a></li>
+    <header>
+      <!-- <a href=".." class="logo"><img src="../image/neutral/Broader (3) (2).png" alt="" /></a> -->
+      <h2 class="logo">Portfo<span>lio</span></h2>
+    <ul class="navbar">
+      <li><a  href="#hero">Home</a></li>
+      <li><a  href="#about">About me</a></li>
+      <li><a  href="#section--2"> Blog</a></li>
+      <li><a  href="#project">Projects</a></li>
+      <li><a  href="#contact">Contact</a></li>
+    </ul>
+   
+    <div class="h-btn">
+      <!-- <a href="./login_page/login.html" class="h-btn1">Login</a>
+        <a href="./register-page/register.html" class="h-btn3">Sign up</a> -->
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+  <!-- </div> -->
+<!-- </nav> -->
 
-              <li><a class="nav__link" href="#section--2">Skills</a></li>
-
-              <li><a class="nav__link" href=".project">Projects</a></li>
-
-              <li><a class="nav__link" href="#contact">Contact</a></li>
-             
-            </ul>
-          </nav>
-          <!-- overlay modal-->
-        </nav>
         
       </div>
 
       <div class="content">
-        <h4>Hello My Name is</h4>
+        <h4>Hi My Name is</h4>
 
         <h1>Geremi <span>Wanga</span></h1>
 
-        <h3>Iam a Front-end developer.</h3>
+        <h3>I' m a Full-Stack developer.</h3>
 
         <div class="newsletter">
-          <form>
-            <input
-              type="email"
-              name="email"
-              id="mail"
-              placeholder="Enter your Email"
-            />
+          <!-- <form> -->
+            
 
-            <a href="mailto:geremiwanga57@gmail.com">Let's Start</a>
-          </form>
+
+<button id="openModalBtn"  class=" contact-btn buton">
+  <span>Contact</span>
+</button>
+
+
+          <!-- </form> -->
         </div>
       </div>
     </div>
@@ -89,12 +91,15 @@
           <h5>Developer & <span>Designer</span></h5>
 
           <p>
-            Hi, I’m Geremi a passionate front end developer
-            focused on building intuitive, engaging web experiences.
-            With skills in HTML, CSS, JavaScript, and React,
-            I turn ideas into clean, responsive interfaces.
-            I'm exploring how AI and the web can work together to create meaningful, 
-            dynamic tools.
+Hi I'm a full-stack developer with a strong focus on building fast
+secure, and interactive web applications. I work across both the frontend and backend recently delivering a production-ready commercial
+real estate platform featuring a custom Go API,
+automated email workflows, and domain-based hosting.
+Over the past two years, I’ve been building real world applications using 
+JavaScript, Go, HTML5, CSS3 and React 
+with a passion for clean 
+architecture, scalable code, and smooth 
+user experiences.
           </p>
 
         </div>
@@ -136,7 +141,7 @@
         <!-- </div> -->
           <!-- <h5 class="operations__header">HTML</h5> -->
           <p>
-            The <span class="highlight"> At the core of JavaScript is the concept of execution context</span>, which is the environment in which code is evaluated and executed. When JavaScript runs a script, it creates a global execution context and, for each function call, a new function execution context. These contexts are managed in a stack-like structure called the call stack. Within each context, variables are stored in what's called the scope. JavaScript uses lexical scoping, meaning a function’s scope is determined by where it was defined in the code. Understanding how context and scope work is essential for managing variable access and avoiding bugs, especially in nested functions and closures
+            The <span class="highlight"> At the core of JavaScript is the concept of execution context</span>, which is the environment in which code is evaluated and executed. When JavaScript runs a script, it creates a global execution context and, for each function call, a new function execution context. These contexts are managed in a stack like structure called the call stack. Within each context, variables are stored in what's called the scope. JavaScript uses lexical scoping, meaning a function’s scope is determined by where it was defined in the code. Understanding how context and scope work is essential for managing variable access and avoiding bugs, especially in nested functions and closures
           </p>
         </div>
         
@@ -151,7 +156,7 @@
           <!-- <h5 class="operations__header">CSS</h5> -->
           <p>
             Controls the <span class="highlight">
-            JavaScript is single-threaded</span>, which means it handles one task at a time. To prevent blocking the main thread, it uses asynchronous features like callbacks, promises, and async/await. These tools allow JavaScript to manage operations like fetching data or reading files without freezing the browser. The event loop plays a crucial role by continuously checking if the call stack is empty and then pushing deferred functions (like .then() or setTimeout) from the queue to the stack. Mastering async concepts is crucial for writing responsive, non-blocking code in modern web applications.
+            JavaScript is single threaded</span>, which means it handles one task at a time. To prevent blocking the main thread, it uses asynchronous features like callbacks, promises, and async await. These tools allow JavaScript to manage operations like fetching data or reading files without freezing the browser. The event loop plays a crucial role by continuously checking if the call stack is empty and then pushing deferred functions (like .then() or setTimeout) from the queue to the stack. Mastering async concepts is crucial for writing responsive, non blocking code in modern web applications.
           </p>
         </div>
         <div class="operations__content operations__content--3">
@@ -165,16 +170,46 @@
           <p>
             JavaScript adds
             <span class="highlight">
-          JavaScript is a prototype-based language</span>, which means inheritance is achieved via prototypes rather than classical classes (though ES6 classes abstract this behavior). Every object has an internal link to another object called its prototype, and it inherits properties and methods from that prototype. The this keyword refers to the object that is currently executing the function and behaves differently depending on how the function is called (regular function, method, arrow function, etc.). Understanding objects, the prototype chain, and the behavior of this is essential for writing efficient and scalable code in JavaScript.
+          JavaScript is a prototype based language</span>, which means inheritance is achieved via prototypes rather than classical classes (though ES6 classes abstract this behavior). Every object has an internal link to another object called its prototype, and it inherits properties and methods from that prototype. The this keyword refers to the object that is currently executing the function and behaves differently depending on how the function is called (regular function, method, arrow function, etc.). Understanding objects, the prototype chain, and the behavior of this is essential for writing efficient and scalable code in JavaScript.
           </p>
         </div>
       </div>
     </section>
 
     <!--Contact section-->
-    <section class="project section ">
+    <section id="project" class="project section ">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <h2>🏗️ Real Estate Website</h2>
+              <div class="projectContent">
+                <img class="project-img" src="./image/Screenshot from 2025-11-13 18-36-47.png" width="450px" height="450px">
+                <ul class="highlights">
+                  <p class="info">
+                    <li>🟦 Built with a custom 
+                      <strong>Golang REST API</strong> for fast and secure backend operations</li> 
+                      <li>📁 Designed <strong>two APIs</strong>: Property Data API (JSON) + Contact/Inquiry API</li> 
+                      <li>🧹 <strong>Input validation & sanitization</strong> to protect against malformed requests</li> 
+                      <li>🔧 Structured with modular packages, clean routing, and environment-based config</li> 
+                      <li>⚡ Optimized response speeds using Go’s concurrency model</li> <li>📎 <strong>Integrated Resend API</strong> for automated email communication</li> 
+                      <li>📬 Auto-sends confirmation emails to users + notifications to property owners</li> 
+                      <li>🔒 Zoho Mail hosting setup with SPF, DKIM & DMARC authentication for trusted delivery</li> 
+                    <li>📱 Mobile-first UI for seamless browsing on all devices</li> 
+                    <li>🔗 Fetch API used for submitting inquiries securely to the Go backend</li> 
+                    <li>🌐 Deployed with HTTPS (SSL), secure environment variables, and server hardening</li> 
+                    <li>🧱 Fully production ready and used by an active real estate business</li> 
+                  </ul> 
+                </div>
+                  <p> A full-stack commercial real estate platform featuring a modern frontend and a high-performance Golang backend.
+                     Property data is served through a structured JSON API,
+                     while a dedicated contact API handles user inquiries with automated email workflows via Resend and Zoho Mail. 
+                    Built with security, speed, and business reliability in mind. </p>
+                <a
+                href="https://www.broaderrealtors.co.ke/"
+                target="_blank"
+                class="btn"
+                >View Live</a>
+            </div>
 <div class="swiper-slide">
             <h2>🤖AI Tool Repository</h2>
             <div class="projectContent">
@@ -183,17 +218,17 @@
   <li>📚 Curated and categorized repository of AI tools</li>
   <li>🧠 Built with Notion organized for clarity, speed, and insight</li>
   <li>🎯 Covers multiple domains: Coding, Design, Audio, Learning, and Productivity</li>
-  <li>📂 Tag-based filtering: Categories like #AIProductivity, #Entertainment, #Business</li>
+  <li>📂 Tag based filtering: Categories like #AIProductivity, #Entertainment, #Business</li>
   <li>💬 Each tool features a short summary, usage example, and my personal rating</li>
   <li>🔗 Direct links to tools, tutorials (YouTube/GitHub), and official documentation</li>
-  <li>⚙️ Tools include GitHub Copilot, Cursor, Udio, Canva, Figma, Teachable Machine, and more</li>
+  <li>⚙️ Tools include GitHub Copilot, Cursor, Udio, Canva, Teachable Machine, and more</li>
   <li>💼 Use case focused: Ideal for developers, designers, and content creators</li>
   <li>🚀 Demonstrates initiative in AI assisted development & modern workflows</li>
   <li>🔄 Continuously updated as I discover and test new tools</li>
 </ul>
 
-            </div>
-              <p>
+</div>
+<p>
                 A curated and regularly updated Notion repo of AI tools I use for development, design, productivity, content creation, and learning. Each tool includes my rating, category, link, and a quick summary.
               </p>
               <a
@@ -203,6 +238,45 @@
               >View Repo</a>
           </div>
           
+          <div class="swiper-slide">
+             <h2>✨📊Task Realm</h2>
+             <div class="projectContent">
+               <img class="project-img" src="./image/Annotation 2025-07-12 234431.png" width="450px" height="450px">
+               <ul class="highlights">
+            
+  <li>🌌 Features a <strong>futuristic galaxy style UI</strong> with an animated video background and a custom neon logo</li>
+  <li>⏳ Includes <strong>live countdown timers</strong> showing time remaining for each task</li>
+  <li>🔔 Implements <strong>desktop notifications</strong> when a task’s deadline is reached (with permission)</li>
+  <li>🗂️ Task details appear in a <strong>modal popup</strong> showing title, notes, and live deadline countdown</li>
+  <li>💾 Uses <strong>localStorage</strong> to persist tasks across sessions</li>
+  <li>✅ Mark tasks complete with interactive checkboxes and slide out animations</li>
+  <li>🧭 Fully <strong>responsive design</strong> for mobile and desktop users</li>
+  <li>📝 Input fields include <strong>task title</strong>, <strong>note</strong>, and a <strong>datetime local</strong> picker</li>
+  <li>🎨 Designed with <strong>clean fonts</strong>, modern transitions, and smooth animations</li>
+  <li>🧩 Built using <strong>modular ES6 classes</strong> (<code>Task</code>, <code>Modal</code>) for scalability</li>
+  <li>🚀 Ideal for <strong>self managers, developers, students</strong>, and productivity enthusiasts</li>
+  <li>🔄 Continuously updated with new features and visual improvements</li>
+</ul>
+             </div>
+                <p>
+  A futuristic task manager. 
+  Features animated galaxy themed background, custom logo, and live deadline countdowns.  
+  Includes localStorage, desktop notifications, and responsive modals for task details.  
+  Designed for productivity lovers who want both function and flair.
+</p>
+
+           <a
+             href="https://geremi57.github.io/to_do_app"
+             target="_blank"
+             class="btn"
+             >View Live</a
+           >
+           <a
+             href="https://github.com/Geremi57/to_do_app"
+             target="_blank"
+             class="btn btn-secondary"
+             >View Code</a>
+           </div>
           <div class="swiper-slide">
             <h2>🍲 Oliro Recipe Finder</h2>
             <div class="projectContent">
@@ -218,7 +292,7 @@
                 </p>
                   <li>💾 Bookmark system: Allows users to save and revisit favorite recipes</li>
                   <li>🔢 Dynamic URL routing with hashchange and load events for better SPA-like navigation</li>
-                  <li>🖼️ Responsive design — optimized for both mobile and desktop viewing</li>
+                  <li>🖼️ Responsive design optimized for both mobile and desktop viewing</li>
                   <li>🧪 Debugging & Testing: Used Chrome DevTools to fix bugs, inspect API calls, and improve performance</li>
                   <li>🌐 Deployed on Netlify with version control through Git & GitHub</li>
                   <li>📝 allows users to dynamically add their own recipes with ingredients into the api using api key</li>
@@ -228,7 +302,7 @@
                 A clean, MVC-structured recipe app that fetches millions of recipes
                 from an API. Users can search, view, and explore recipe details with
                 a focus on speed and usability. Built using JavaScript (ES6),
-                modular architecture, async/await, and object-oriented principles.
+                modular architecture, async await, and object-oriented principles.
               </p>
               <a
               href="https://olirorecipes.netlify.app/"
@@ -276,7 +350,7 @@
                 <li>🗂 Workout List: View all your workouts in a sidebar list.</li>
                 <li>🗑 Delete Workouts: Remove workouts easily with a single click.</li>
                 <li>💾 Local Storage: Your data is saved in your browser and persists across sessions.</li>
-                <li>ℹ️ Info Modal: Learn how to use the app with a built-in help modal.</li>
+                <li>ℹ️ Info Modal: Learn how to use the app with a built in help modal.</li>
               </ul>
             </div>
                 <p>
@@ -311,7 +385,7 @@
               </ul>
             </div>
                 <p>
-                  This is a browser-based implementation of the classic Pig Dice Game. The game is built using HTML, CSS, and Vanilla JavaScript
+                  This is a browser based implementation of the classic Pig Dice Game. The game is built using HTML, CSS, and Vanilla JavaScript
                 </p>
           <a
             href="https://geremi57.github.io/Roll-hold/"
@@ -345,9 +419,10 @@ Project Structure</li>
             </div>
                 <p>
                   A simple interactive number guessing game built with HTML, CSS, and JavaScript.
-                  Responsive and retro-inspired design.
-Real-time feedback for user guesses.
+                  Responsive and retro inspired design.
+Real time feedback for user guesses.
 Highscore tracking for your best game.
+
                 </p>
           <a
             href="https://geremi57.github.io/guess-the-number-game/"
@@ -364,6 +439,8 @@ Highscore tracking for your best game.
        
        
         </div>
+       
+        </div>
         
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -378,7 +455,7 @@ Highscore tracking for your best game.
       <a class="button2" href="mailto:geremiwanga57@gmail.com">Hire Me</a>
        
       <a download 
-      href="./image/Geremi Wanga Resume (1).pdf" >
+      href="./Resume.pdf" >
       <button class="button" type="button">
       <span class="button__text">Resume</span>
       <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
@@ -407,6 +484,65 @@ Highscore tracking for your best game.
           ><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </footer>
+
+    <!-- <div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="your@email.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your message" required></textarea>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div>
+</div> -->
+
+<!-- From Uiverse.io by Smit-Prajapati --> 
+
+<!-- <div id="contactModal" class="form-container modal">
+  <div class="modal-content"></div>
+    <span class="close-btn">&times;</span>
+
+    <form id="contactForm" class="contactForm">
+        <span class="heading">Get in touch</span>
+        <input placeholder="Name" type="text" class="input">
+        <input placeholder="Email" id="email" type="email" class="input">
+        <textarea placeholder="Your message" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+        <div class="button-container">
+        <button type="submit" class="send-button">Send</button>
+        </div>
+      </form>
+      </div>
+</div>
+</div> -->
+
+<div id="contactModal" class="modal">
+  <div class="modal-content form-container">
+    <span class="close-btn">&times;</span>
+
+    <form id="contactForm" class="contactForm form-container">
+      <span class="heading">Get in touch</span>
+      <input placeholder="Name" id="name" type="text" class="input">
+      <input placeholder="Email" id="email" type="email" class="input">
+      <textarea placeholder="Your message" id="message" class="textarea"></textarea>
+
+      <div class="button-container">
+        <button type="submit" class="send-button">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
