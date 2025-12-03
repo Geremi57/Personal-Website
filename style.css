@@ -1494,13 +1494,13 @@ flex-wrap: wrap;
     line-height: 2;
   }
 
-  .content{
-    margin-top: 10%;
-    height: fit-content;
+  /* .content{
+    margin-top: 9%;
+    height: max-content;
   }
   #hero{
-    max-height: 80vh;
-  }
+    max-height: 89vh;
+  } */
 }
 
 @media (max-width:368px){
